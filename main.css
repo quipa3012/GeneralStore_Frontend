@@ -1,0 +1,196 @@
+/* Phần CSS của chung */
+body {
+    background-image: linear-gradient(to right, #82e1f6, #cebaf2);
+    background-size: contain;
+}
+
+main {
+    height: 100%;
+}
+
+@keyframes titleAnimation {
+    from {
+        color: white;
+    }
+
+    to {
+        color: blue;
+        text-shadow: #82e1f6 2px 2px 2px;
+    }
+}
+
+.inputHover:hover {
+    box-shadow: dodgerblue 0px 2px 4px 0px, dodgerblue 0px 2px 16px 0px;
+}
+
+.myA {
+    animation-name: titleAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.img-header {
+    width: 80%;
+    margin-left: 5%;
+}
+
+.navbar-brand {
+    width: 25%;
+}
+
+.nav-item {
+    padding: 5px;
+}
+
+#search {
+    border-color: #0d6efd;
+    color: #0d6efd;
+}
+
+.footer_list {
+    text-decoration: none;
+}
+
+.social-icon {
+    border-color: #0d6efd;
+}
+
+.social-icon:hover {
+    color: white;
+}
+
+.main-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 5.8%;
+    margin-bottom: 0%;
+    box-shadow: 10px 10px 10px;
+}
+
+.banner-slide {
+    padding-top: 3%;
+    height: 100%;
+}
+
+.index-image {
+    padding: 10px;
+}
+
+.main_form-posision {
+    margin-top: 12%;
+    margin-bottom: 6%;
+}
+
+#gotop {
+    background: linear-gradient(blue, violet);
+    margin: 0% 0.5% 1% 0%;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 35px;
+}
+
+#gotop:hover {
+    box-shadow: dodgerblue 0px 2px 4px 0px, dodgerblue 0px 2px 16px 0px;
+}
+
+/* Phần CSS của chung */
+
+
+/* Trang giới thiệu */
+.introduce_row {
+    justify-content: center;
+}
+
+#introduce_row1_col1 {
+    margin-top: 20px;
+}
+
+#introduce_row4_col1 {
+    margin-bottom: 20px;
+}
+
+#introduce_row4_col2 {
+    margin-bottom: 20px;
+}
+
+#introduce_row4_col3 {
+    margin-bottom: 20px;
+}
+
+#introduce_row2 {
+    margin: 50px;
+}
+
+#introduce_row3 {
+    margin-bottom: 30px;
+}
+
+#introduce_body {
+    /* background-image: url(images/main/bg.jpg); */
+    background-size: contain;
+}
+
+.introduce-container {
+    background-color: white;
+    border-color: black;
+    border-style: none;
+    border-radius: 2%;
+}
+
+/* Trang giới thiệu */
+
+
+/* Trang liên hệ */
+.contact_container {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Trang liên hệ */
+
+/* Trang sản phẩm */
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% auto;
+}
+
+
+.product-sale {
+    position: absolute;
+    margin: 0% 0% 0% 5%;
+    height: 22%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    background-color: blue;
+    color: white;
+    box-shadow: 3px 3px 3px black;
+}
+
+.product-salePrice {
+    text-decoration: line-through;
+    color: gray;
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.product-img {
+    height: 150px;
+    width: 200px;
+    margin-left: 15%;
+    margin-top: 3%;
+}
+
+.product-item:hover {
+    box-shadow: dodgerblue 0px 2px 4px 0px, dodgerblue 0px 2px 16px 0px;
+}
+
+.product-category {
+    color: #000;
+}
+
+.product-category:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+/* Trang sản phẩm */

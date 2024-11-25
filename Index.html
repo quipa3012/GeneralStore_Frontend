@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+    <link rel="shortcut icon" href="images/header/hd-image1.jpg" type="shortcut icon">
+
+    <!-- link các thư viện được viết sẵn: offline -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="all.min.js"></script>
+    <!-- link các thư viện được viết sẵn: offline -->
+
+    <!-- link các thư viện được viết sẵn: online -->
+    <!-- <script src="https://kit.fontawesome.com/762070c277.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script> -->
+    <!-- link các thư viện được viết sẵn: online -->
+
+    <!-- link các thư viện tự viết -->
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+    <!-- link các thư viện tự viết -->
+
+    <!-- responsive hỗ trợ cho nhiều thiết bị khác nhau -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- responsive hỗ trợ cho nhiều thiết bị khác nhau -->
+
+</head>
+
+<body style="background-color: white;">
+    <header id="head">
+        <nav class="navbar fixed-top navbar-expand-lg" style="background-color:azure">
+
+            <!-- thẻ chứa các thành phần của phần header -->
+            <div class="container-fluid">
+
+                <!-- logo shop -->
+                <a class="navbar-brand" href="Index.html"><img class="img-header" src="images/header/hd2.jpg"
+                        alt=""></a>
+                <!-- logo shop -->
+
+                <!-- menu header trên các thiết bị nhỏ hoặc khi thu nhỏ trình duyệt-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- menu header trên các thiết bị nhỏ hoặc khi thu nhỏ trình duyệt -->
+
+                <!-- thẻ chứa các Các danh mục header và thanh tìm kiếm-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Các danh mục của phần header -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary active" aria-current="page" href="Index.html"><i
+                                    class="fa-solid fa-house"></i> Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary" href="gioithieu.html"><i class="fa-solid fa-comment"></i>
+                                Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary" href="lienhe.html"><i class="fa-solid fa-phone"></i> Liên
+                                hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary" href="sanpham.html"><i class="fa-solid fa-shop"></i> Sản
+                                phẩm</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-user"></i> Tài khoản
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="dangnhap.html">Đăng nhập</a></li>
+                                <li><a class="dropdown-item" href="dangky.html">Đăng ký</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- Các danh mục của phần header -->
+
+                    <!-- thanh tìm kiếm -->
+                    <form class="d-flex" role="search">
+                        <input id="search" class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm"
+                            aria-label="Search">
+                        <a class="btn btn-outline-primary" href="timkiem.html"><i
+                                class="fa-solid fa-magnifying-glass"></i></a>
+                    </form>
+                    <!-- thanh tìm kiếm -->
+
+                    <!-- Giỏ hàng -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary" href="giohang.html"><i
+                                    class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a>
+                        </li>
+                    </ul>
+                    <!-- Giỏ hàng -->
+
+                </div>
+                <!-- thẻ chứa các Các danh mục header và thanh tìm kiếm-->
+
+            </div>
+            <!-- thẻ chứa các thành phần của phần header -->
+
+        </nav>
+    </header>
+    <main style="background-color: lightcyan;">
+        <section class="container main-container text-center">
+
+            <!-- dòng 1 -->
+            <div class="row">
+                <!-- banner quảng cáo -->
+                <div id="carouselExampleIndicators" class="carousel slide banner-slide col-lg-8" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="sanpham.html"><img src="images/index/qc1.png" class="d-block w-100" alt="qc1"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/index/qc2.png" class="d-block w-100" alt="qc2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/index/qc3.png" class="d-block w-100" alt="qc3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- banner quảng cáo -->
+
+                <!--  danh mục quảng cáo -->
+                <div class="col-lg-4">
+                    <img class="index-image" src="images/index/im1.png" alt="">
+                    <img class="index-image" src="images/index/im2.png" alt="">
+                    <img class="index-image" src="images/index/im3.png" alt="">
+                    <img class="index-image" src="images/index/im4.png" alt="">
+                    <img class="index-image" src="images/index/im5.png" alt="">
+                    <img class="index-image" src="images/index/im6.png" alt="">
+                </div>
+                <!--  danh mục quảng cáo -->
+            </div>
+            <!-- dòng 1 -->
+
+
+            <!-- dòng 2 -->
+            <div class="row">
+                <div class="col-auto">
+                    <h3 class="myA">Deal cực khủng</h3>
+                </div>
+            </div>
+            <!-- dòng 2 -->
+
+            <!-- dòng 3 -->
+            <div class="row">
+                <div class="col-lg-3 product-list">
+                    <div class="card product-item" style="width: 18rem;">
+                        <img src="images/sanpham/pice/tuongot.jpg" class="card-img-top product-img" alt="...">
+                        <h6 class="product-sale"><br>-40%</h6>
+                        <div class="card-body">
+                            <h5 class="card-title">Tương ớt Chinsu</h5>
+                            <h6 class="card-title product-salePrice">14.000vnd <h6>8.400vnd</h6>
+                            </h6>
+                            <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Thêm
+                                vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-list">
+                    <div class="card product-item" style="width: 18rem;">
+                        <img src="images/sanpham/pice/dauan.jpg" class="card-img-top product-img" alt="...">
+                        <h6 class="product-sale"><br>-40%</h6>
+                        <div class="card-body">
+                            <h5 class="card-title">Dầu ăn Meizan chai 1L</h5>
+                            <h6 class="card-title product-salePrice">50.000vnd <h6>30.000vnd</h6>
+                            </h6>
+                            <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Thêm
+                                vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-list">
+                    <div class="card product-item" style="width: 18rem;">
+                        <img src="images/sanpham/pice/hatnem.jpg" class="card-img-top product-img" alt="...">
+                        <h6 class="product-sale"><br>-40%</h6>
+                        <div class="card-body">
+                            <h5 class="card-title">Hạt nêm Knorr 400g</h5>
+                            <h6 class="card-title product-salePrice">40.000vnd <h6>24.000vnd</h6>
+                            </h6>
+                            <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Thêm
+                                vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-list">
+                    <div class="card product-item" style="width: 18rem;">
+                        <img src="images/sanpham/pice/namngu.jpg" class="card-img-top product-img" alt="...">
+                        <h6 class="product-sale"><br>-40%</h6>
+                        <div class="card-body">
+                            <h5 class="card-title">Nước mắm Nam Ngư</h5>
+                            <h6 class="card-title product-salePrice">50.000vnd <h6>30.000vnd</h6>
+                            </h6>
+                            <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Thêm
+                                vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- dòng 3 -->
+
+            <!-- dòng4  -->
+            <div class="row">
+                <div class="col-lg-3 product-list">
+                    <div class="card product-item" style="width: 18rem;">
+                        <img src="images/sanpham/beer-softDrink/biaH.jpg" class="card-img-top product-img" alt="...">
+                        <h6 class="product-sale"><br>-16%</h6>
+                        <div class="card-body">
+                            <h5 class="card-title">Bia Heineken 1 thùng</h5>
+                            <h6 class="card-title product-salePrice">430.000vnd <h6>361.200vnd</h6>
+                            </h6>
+                            <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Thêm
+                                vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-list">
+                    <div class="card product-item" style="width: 18rem;">
+                        <img src="images/sanpham/beer-softDrink/biaredruby.jpg" class="card-img-top product-img"
+                            alt="...">
+                        <h6 class="product-sale"><br>-36%</h6>
+                        <div class="card-body">
+                            <h5 class="card-title">Bia Red Ruby 1 thùng</h5>
+                            <h6 class="card-title product-salePrice">200.000vnd <h6>128.000vnd</h6>
+                            </h6>
+                            <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Thêm
+                                vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-list">
+                    <div class="card product-item" style="width: 18rem;">
+                        <img src="images/sanpham/beer-softDrink/nuocsuoi.jpg" class="card-img-top product-img"
+                            alt="...">
+                        <h6 class="product-sale"><br>-10%</h6>
+                        <div class="card-body">
+                            <h5 class="card-title">Aquafina 1 thùng</h5>
+                            <h6 class="card-title product-salePrice">110.000vnd <h6>99.000vnd</h6>
+                            </h6>
+                            <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Thêm
+                                vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-list">
+                    <div class="card product-item" style="width: 18rem;">
+                        <img src="images/sanpham/beer-softDrink/revive.jpg" class="card-img-top product-img" alt="...">
+                        <h6 class="product-sale"><br>-10%</h6>
+                        <div class="card-body">
+                            <h5 class="card-title">Revive 1 thùng</h5>
+                            <h6 class="card-title product-salePrice">250.000vnd <h6>225.000vnd</h6>
+                            </h6>
+                            <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Thêm
+                                vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- dòng4  -->
+
+            <!-- dòng 5 -->
+            <div class="row">
+                <div class="col-auto">
+                    <h3 class="myA">Thực phẩm tươi giá tốt</h3>
+                </div>
+            </div>
+            <!-- dòng 5 -->
+
+            <!-- dòng 6 -->
+            <div class="row">
+                <div class="col-lg-3 product-list">
+                    <div class="card product-item" style="width: 18rem;">
+                        <img src="images/sanpham/meat-seafood/cahoi.jpg" class="card-img-top product-img" alt="...">
+                        <h6 class="product-sale"><br>-20%</h6>
+                        <div class="card-body">
+                            <h5 class="card-title">Cá hồi 6-7kg/con</h5>
+                            <h6 class="card-title product-salePrice">3.000.000vnd <h6>2.400.000vnd</h6>
+                            </h6>
+                            <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Thêm
+                                vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-list">
+                    <div class="card product-item" style="width: 18rem;">
+                        <img src="images/sanpham/meat-seafood/cathu.jpg" class="card-img-top product-img" alt="...">
+                        <h6 class="product-sale"><br>-20%</h6>
+                        <div class="card-body">
+                            <h5 class="card-title">Cá thu 2kg/con</h5>
+                            <h6 class="card-title product-salePrice">700.000vnd<h6>560.000vnd</h6>
+                            </h6>
+                            <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Thêm
+                                vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-list">
+                    <div class="card product-item" style="width: 18rem;">
+                        <img src="images/sanpham/meat-seafood/chaca.jpg" class="card-img-top product-img" alt="...">
+                        <h6 class="product-sale"><br>-20%</h6>
+                        <div class="card-body">
+                            <h5 class="card-title">Chả cá gói 200g</h5>
+                            <h6 class="card-title product-salePrice">60.000vnd<h6>48.000vnd</h6>
+                            </h6>
+                            <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Thêm
+                                vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-list">
+                    <div class="card product-item" style="width: 18rem;">
+                        <img src="images/sanpham/meat-seafood/khomuc.jpg" class="card-img-top product-img" alt="...">
+                        <h6 class="product-sale"><br>-20%</h6>
+                        <div class="card-body">
+                            <h5 class="card-title">Khô mực 300g</h5>
+                            <h6 class="card-title product-salePrice">400.000vnd<h6>320.000vnd</h6>
+                            </h6>
+                            <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Thêm
+                                vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- dòng 6 -->
+
+            <!-- dòng 7 -->
+            <div class="row">
+                <div class="col-lg-3 product-list">
+                    <div class="card product-item" style="width: 18rem;">
+                        <img src="images/sanpham/vegetable/caingot.jpg" class="card-img-top product-img" alt="...">
+                        <h6 class="product-sale"><br>-50%</h6>
+                        <div class="card-body">
+                            <h5 class="card-title">Cải ngọt 500g</h5>
+                            <h6 class="card-title product-salePrice">15.000vnd<h6>7.500vnd</h6>
+                            </h6>
+                            <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Thêm
+                                vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-list">
+                    <div class="card product-item" style="width: 18rem;">
+                        <img src="images/sanpham/vegetable/khoqua.jpg" class="card-img-top product-img" alt="...">
+                        <h6 class="product-sale"><br>-50%</h6>
+                        <div class="card-body">
+                            <h5 class="card-title">Khổ qua 1kg</h5>
+                            <h6 class="card-title product-salePrice">40.000vnd<h6>20.000vnd</h6>
+                            </h6>
+                            <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Thêm
+                                vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-list">
+                    <div class="card product-item" style="width: 18rem;">
+                        <img src="images/sanpham/vegetable/cachua.jpg" class="card-img-top product-img" alt="...">
+                        <h6 class="product-sale"><br>-50%</h6>
+                        <div class="card-body">
+                            <h5 class="card-title">Cà chua Đà Lạt 1kg</h5>
+                            <h6 class="card-title product-salePrice">40.000vnd<h6>20.000vnd</h6>
+                            </h6>
+                            <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Thêm
+                                vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 product-list">
+                    <div class="card product-item" style="width: 18rem;">
+                        <img src="images/sanpham/vegetable/bi.jpg" class="card-img-top product-img" alt="...">
+                        <h6 class="product-sale"><br>-50%</h6>
+                        <div class="card-body">
+                            <h5 class="card-title">Bí đỏ hồ lô</h5>
+                            <h6 class="card-title product-salePrice">20.000vnd <h6>10.000vnd</h6>
+                            </h6>
+                            <a href="#" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i> Thêm
+                                vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- dòng 7 -->
+
+        </section>
+    </main>
+    <footer class="bg-dark text-center text-white">
+
+        <!-- Grid container -->
+        <div class="container p-4">
+
+            <!-- Section1: Các icon MXH -->
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+            </section>
+            <!-- Section1: Các icon MXH -->
+
+            <!-- Section2: Form -->
+            <section class="">
+                <form action="">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Đăng ký nhận thông báo về dịch vụ của chúng tôi</strong>
+                            </p>
+                        </div>
+                        <div class="col-md-5 col-12">
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example21" class="form-control" />
+                                <label class="form-label" for="form5Example21">Địa chỉ Email</label>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                Đăng ký
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <!-- Section2: Form -->
+
+            <!-- Section3: Các thông tin về cửa hàng -->
+            <section class="">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Về Chúng Tôi</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <p class="text-white">Công Ty Cổ Phần Dịch Vụ Thương Mại Tổng Hợp T3</p>
+                            </li>
+                            <li>
+                                <p class="text-white">Mã số doanh nghiệp: 0104918404</p>
+                            </li>
+                            <li>
+                                <p class="text-white">Đăng ký lần đầu ngày 20 tháng 09 năm 2010</p>
+                            </li>
+                            <li>
+                                <p class="text-white">Đăng ký thay đổi lần thứ 44, ngày 15 tháng 09 năm 2022</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Đường Dẫn</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="Index.html" class="text-white footer_list">Trang Chủ</a>
+                            </li>
+                            <li>
+                                <a href="gioithieu.html" class="text-white footer_list">Giới Thiệu Về Chúng Tôi</a>
+                            </li>
+                            <li>
+                                <a href="lienhe.html" class="text-white footer_list">Thông Tin Liên Lạc</a>
+                            </li>
+                            <li>
+                                <a href="sanpham.html" class="text-white footer_list">Dịch Vụ</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white footer_list">Điều Kiện Chính Sách</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Thông Tin Liên Hệ</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <span><i class="fa fa-phone"></i> <a class="text-white footer_list" href="#">+84 123 456
+                                        789</a></span>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-phone"></i> <a class="text-white footer_list" href="#">+84
+                                        987654321</a></span>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-envelope"></i> <a class="text-white footer_list"
+                                        href="#">quib2016999@student.ctu.edu.vn</a></span>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-envelope"></i> <a class="text-white footer_list"
+                                        href="#">diachiemail2@gmail.com</a></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Trụ sở chính</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <p class="text-white">Trụ sở chính 1: 58/58B, Đường 3-2, Phường Hưng Lợi, Quận Ninh
+                                    Kiều,
+                                    Thành phố Cần Thơ</p>
+                            </li>
+                            <li>
+                                <p class="text-white">Trụ sở chính 2: 382 Nguyễn Duy Trinh, Phường Bình Trưng Đông,
+                                    Thành
+                                    phố Thủ Đức, Thành phố Hồ Chí Minh</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Section3: Các thông tin về cửa hàng -->
+
+        </div>
+        <!-- Grid container -->
+
+        <!-- Nút chuyển đến đầu trang -->
+        <div class="container-fluid text-end fixed-bottom">
+            <a class="btn" id="gotop" href="#head"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+        <!-- Nút chuyển đến đầu trang -->
+
+    </footer>
+</body>
+
+</html>
